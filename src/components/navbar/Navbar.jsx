@@ -26,7 +26,7 @@ const Navbar = () => {
     }
   }, [])
 
-  const isMobile = windowWidth <= 768 // You can adjust this breakpoint
+  const isMobile = windowWidth <= 768 
   return (
     <div className='flex items-center justify-between text-yellow-700 bg-transparent z-50 pr-5 pl-2 pt-6 lg:pt-4'>
       <div className='flex items-center'>

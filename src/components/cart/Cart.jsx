@@ -65,7 +65,7 @@ const Cart = () => {
                 <div className='flex gap-1'>
                   <button
                     onClick={() => {
-                      removeFromCart(item.id) // Remove one instance of the product
+                      removeFromCart(item.id)
                     }}
                     className='text-red-500 font-semibold text-4xl font-sans hover:text-red-700 text-start pt-2 tracking-wider'
                   >
@@ -73,7 +73,7 @@ const Cart = () => {
                   </button>
                   <button
                     onClick={() => {
-                      addToCart(item) // Remove all instances of the product
+                      addToCart(item) 
                     }}
                     className='text-green-500 font-medium text-4xl font-sans hover:text-green-700 text-start pt-2 tracking-wider'
                   >

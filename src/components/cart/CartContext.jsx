@@ -26,7 +26,6 @@ export const CartProvider = ({ children }) => {
 
     if (existingItem) {
       if (existingItem.quantity > 1) {
-        // If the item has a quantity greater than 1, decrease its quantity by 1
         const updatedCart = cartItems.map((cartItem) => {
           if (cartItem.id === itemId) {
             return { ...cartItem, quantity: cartItem.quantity - 1 }
@@ -35,7 +34,6 @@ export const CartProvider = ({ children }) => {
         })
         setCartItems(updatedCart)
       } else {
-        // If the item has a quantity of 1, remove it from the cart
         const updatedCart = cartItems.filter(
           (cartItem) => cartItem.id !== itemId
         )

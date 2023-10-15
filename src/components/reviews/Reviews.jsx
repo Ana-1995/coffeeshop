@@ -51,7 +51,6 @@ useEffect(()=>{
          </p>
          <div className=''>
            {' '}
-           {/* Add max height and overflow-y-auto */}
            <p className='text-xl text-center w-fit text-amber-400'>
              "{review.review}"
            </p>

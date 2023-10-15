@@ -58,7 +58,7 @@ background-image: url('../src/assets/bg.png');
 /* Add this to your CSS file */
 .underline-hover {
   position: relative;
-  transition: all 0.3s ease; /* Adjust the duration as needed */
+  transition: all 0.3s ease; 
 }
 
 .underline-hover::after {
@@ -67,9 +67,9 @@ background-image: url('../src/assets/bg.png');
   left: 0;
   bottom: 0;
   width: 0;
-  height: 2px; /* Adjust the thickness of the underline */
-  background-color: #D97706; /* Adjust the color of the underline */
-  transition: all 0.3s ease; /* Make the transition smooth */
+  height: 2px; 
+  background-color: #D97706; 
+  transition: all 0.3s ease; 
 }
 
 .underline-hover:hover::after {
@@ -78,16 +78,14 @@ background-image: url('../src/assets/bg.png');
 
 /* Apply styles to the select element */
 #sortOrder {
-  background-color: #4B3821; /* Set the background color */
- /* Set the text color */
+  background-color: #4B3821; 
+
 }
 
-/* Apply styles to the options */
 #sortOrder option {
-  background-color: #4B3821; /* Set the background color to match the parent select */
-   /* Set the text color to match the parent select */
-  font-size: 2xl; /* Set the font size to match the parent select */
-  padding: 1rem 2rem; /* Adjust padding to match the parent select */
+  background-color: #4B3821; 
+  font-size: 2xl; 
+  padding: 1rem 2rem; 
   
 }
 .scale-in-ver-top {

@@ -11,7 +11,6 @@ const Contact = () => {
    const [isValidEmail, setIsValidEmail] = useState(true)
 
    const validateEmail = (email) => {
-     // Regular expression for a simple email validation
      const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
      return emailRegex.test(email)
    }
