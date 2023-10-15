@@ -32,7 +32,7 @@ const Cart = () => {
           <p className='text-amber-300 text-4xl'>You have no order</p>
           <div className='flex flex-row items-center border-b border-yellow-700 text-yellow-700 hover:text-yellow-600 hover:border-yellow-600 ml-4'>
             <Link to={'/shop'} className='text-4xl'>
-              Speed it up!
+              Hurry up!
             </Link>
             
             <PiCoffeeLight className='text-4xl ml-2' />
