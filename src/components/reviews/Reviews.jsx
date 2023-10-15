@@ -28,7 +28,7 @@ useEffect(()=>{
  const review = reviewsData[currentReview]
 
  return (
-   <div>
+   <div className='mb-5'>
      <Navbar />
      <p className='text-center pt-9 pb-0 lg:pb-6 lg:pl-4 text-2xl mx-3 lg:mx-0 md:text-3xl tracking-wider text-yellow-800'>
        "Coffee, the favorite drink of the civilized world." - Thomas Jefferson
