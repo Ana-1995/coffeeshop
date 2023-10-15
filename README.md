@@ -21,13 +21,13 @@ A simple and delightful Coffee Shop website built with React, React Router, and 
 
 ## Project Overview
 
-The Green Space e-commerce website aims to provide users with a seamless plant shopping experience. It boasts the following key features:
+ This project offers a seamless coffee shopping experience with the following key features:
 
 - **Product Listings**: A wide range of coffees with detailed information is available for browsing.
 - **Shopping Cart**: Users can add and remove items from their cart and view the total price.
-- **Product Details**: Detailed plant information, including multiple perspective photos, is accessible.
-- **Search, sort and Filters**: Plants can be easily found using the search bar, sorting function and filter options.
-- **Animations and Visuals**: The website is enhanced with GIFs, animations, sliders, videos, and more to engage users effectively.
+- **Product Details**: Detailed coffee information: prices, preparation and recipes.
+- **Search, sort and Filters**: Coffee can be easily found using the search bar, sorting function and filter options.
+- **Animations and Visuals**: The website is enhanced with animations, sliders and more to engage users effectively.
 
 
 ## Built With
