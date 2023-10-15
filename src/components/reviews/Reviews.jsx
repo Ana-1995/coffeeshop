@@ -36,7 +36,7 @@ useEffect(()=>{
      <div
        className={`${
          animation ? 'swing-in-left-bck' : 'hidden'
-       } bg-[#2A1300] rounded-2xl m-auto w-[90%] lg:w-[32rem] h-[30rem] lg:h-[26rem] relative mt-12 pt-6 px-4 mb-6`}
+       } bg-[#2A1300] rounded-2xl m-auto w-[90%] lg:w-[32rem] h-[30rem] lg:h-[26rem] relative mt-12 pt-6 px-4 mb-4`}
      >
        <div className='rounded-full w-32 h-32 mx-auto my-2 lg:my-4'>
          <img
@@ -61,16 +61,16 @@ useEffect(()=>{
      <div
        className={`${
          animation2 ? 'swing-in-bottom-fwd' : 'hidden'
-       } flex justify-center items-center mt-3 mb-5 lg:mt-6 space-x-3 text-3xl`}
+       } flex justify-center items-center mt-3 pb-5 lg:mt-6 space-x-3 text-3xl`}
      >
        <button
-         className='text-white hover:text-amber-600'
+         className='text-white hover:text-amber-600 mb-5'
          onClick={handlePrevReview}
        >
          <BsArrowLeft />
        </button>
        <button
-         className='text-white hover:text-amber-600'
+         className='text-white hover:text-amber-600 mb-5'
          onClick={handleNextReview}
        >
          <BsArrowRight />
