@@ -28,7 +28,7 @@ useEffect(()=>{
  const review = reviewsData[currentReview]
 
  return (
-   <div className='mb-5'>
+   <div>
      <Navbar />
      <p className='text-center pt-9 pb-0 lg:pb-6 lg:pl-4 text-2xl mx-3 lg:mx-0 md:text-3xl tracking-wider text-yellow-800'>
        "Coffee, the favorite drink of the civilized world." - Thomas Jefferson
@@ -36,7 +36,7 @@ useEffect(()=>{
      <div
        className={`${
          animation ? 'swing-in-left-bck' : 'hidden'
-       } bg-[#2A1300] rounded-2xl m-auto w-[90%] lg:w-[32rem] h-[30rem] lg:h-[26rem] relative mt-12 pt-6 px-4`}
+       } bg-[#2A1300] rounded-2xl m-auto w-[90%] lg:w-[32rem] h-[30rem] lg:h-[26rem] relative mt-12 pt-6 px-4 mb-6`}
      >
        <div className='rounded-full w-32 h-32 mx-auto my-2 lg:my-4'>
          <img
