@@ -89,7 +89,7 @@ const productDetails = ({ products }) => {
           </p>
 
           <Link
-            className='text-xl font-mono font-bold text-yellow-600 border-b border-yellow-600 w-fit pb-5 lg:pb-1 '
+            className='text-xl font-mono font-bold text-yellow-600 border-b border-yellow-600 w-fit mb-5 lg:mb-1 '
             to={'/shop'}
           >
             BACK TO SHOP

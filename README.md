@@ -1,6 +1,6 @@
 # Coffee Shop - E-Commerce Website
 
-**Live Website**:
+**Live Website**: [https://coffeeshop-delta.vercel.app/]
 
 ![Project Preview](./src/assets/coffeeshop.jpg)
 
@@ -56,3 +56,10 @@ The Green Space e-commerce website aims to provide users with a seamless plant s
 - **Vite**: The development and bundling tool.
 - **ESLint**: Ensures code quality through linting.
 - **GitHub**: Used for version control.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Ana-1995/coffeeshop.git

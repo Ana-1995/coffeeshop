@@ -37,7 +37,7 @@ const Contact = () => {
       <div
         className={`${
           animation ? 'fade-in-fwd' : 'hidden'
-        } w-full lg:w-[45rem] shadow-xl  shadow-[#4B3821] h-[30rem] m-auto bg-cover bg-left relative rounded-xl`}
+        } w-full lg:w-[45rem] shadow-xl  shadow-[#4B3821] h-[30rem] m-auto bg-cover bg-left relative rounded-xl mb-5`}
         style={{ backgroundImage: `url(${contact})` }}
       >
         <div className='absolute top-28 right-20 flex flex-col'>

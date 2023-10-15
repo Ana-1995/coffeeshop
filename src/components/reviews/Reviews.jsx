@@ -61,7 +61,7 @@ useEffect(()=>{
      <div
        className={`${
          animation2 ? 'swing-in-bottom-fwd' : 'hidden'
-       } flex justify-center items-center mt-3 lg:mt-6 space-x-3 text-3xl`}
+       } flex justify-center items-center mt-3 mb-5 lg:mt-6 space-x-3 text-3xl`}
      >
        <button
          className='text-white hover:text-amber-600'

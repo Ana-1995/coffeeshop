@@ -55,7 +55,7 @@ const Shop = () => {
   }
 
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full mb-5'>
       <Navbar />
       <div>
         <p className='text-center pt-9 pb-6 lg:pl-4 text-2xl mx-3 lg:mx-0 md:text-3xl tracking-wider text-yellow-800'>

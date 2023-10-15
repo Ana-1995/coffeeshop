@@ -72,7 +72,7 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-      <div className='flex items-center relative'>
+      <div className='flex items-center relative pr-2 lg:pr-1'>
         <NavLink
           to={'/cart'}
           className={({ isActive }) => (isActive ? activeNav : notActiveNav)}

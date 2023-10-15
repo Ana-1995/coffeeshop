@@ -29,11 +29,11 @@ const Home = () => {
         style={{ backgroundImage: `url(${homebg2})` }}
       >
         <Navbar />
-        <div className='flex flex-col my-72 items-center gap-y-6 text-center'>
+        <div className='flex flex-col my-64 lg:my-72 items-center gap-y-6 text-center'>
           <h1
             className={`${
               resetAnimation2 ? 'scale-in-center' : 'hidden'
-            } text-3xl md:text-5xl lg:text-4xl lg:text-6xl text-yellow-100 capitalize font-semibold tracking-wider`}
+            } text-3xl md:text-5xl lg:text-6xl text-yellow-100 capitalize font-semibold tracking-wider`}
           >
             Life begins after coffee
           </h1>
