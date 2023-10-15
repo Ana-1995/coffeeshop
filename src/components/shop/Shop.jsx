@@ -10,7 +10,7 @@ import './shop.css'
 const Shop = () => {
   const [search, setSearch] = useState('')
   const [selectedFilter, setselectedFilter] = useState({ category: null })
-  const [sortOrder, setSortOrder] = useState('asc') 
+  const [sortOrder, setSortOrder] = useState('none') 
     const [resetAnimation, setResetAnimation] = useState(false)
     useEffect(() => {
       setResetAnimation(true)
@@ -45,6 +45,7 @@ const Shop = () => {
     }
 
     // Sort the filtered data
+  
     if (sortOrder === 'asc') {
       filteredAndSortedCoffee.sort((a, b) => a.price - b.price)
     } else if (sortOrder === 'desc') {
@@ -59,37 +60,36 @@ const Shop = () => {
       <Navbar />
       <div>
         <p className='text-center pt-9 pb-6 lg:pl-4 text-2xl mx-3 lg:mx-0 md:text-3xl tracking-wider text-yellow-800'>
-          "Coffee smells like freshly ground heaven." -  Jessi Lane Adams
+          "Coffee smells like freshly ground heaven." - Jessi Lane Adams
         </p>
         <div className={`${resetAnimation ? 'scale-in-center' : 'hidden'}`}>
           <div className='flex flex-col lg:flex-row justify-center items-center gap-x-4 pt-0 lg:pt-14 mb-2 lg:mb-20'>
-            <div className="flex flex-row gap-x-3">
-            <button
-              onClick={handleAllCoffeeFilter}
-              className={`${
-                selectedFilter.category === null
-                  ? 'font-extrabold text-amber-300'
-                  : 'font-normal text-amber-200'
-              } bg-transparent text-xl lg:text-2xl tracking-wide `}
-            >
-              All
-            </button>
-            {['hot', 'cold', 'cocktail'].map((category) => (
+            <div className='flex flex-row gap-x-3'>
               <button
-                key={category}
+                onClick={handleAllCoffeeFilter}
                 className={`${
-                  selectedFilter.category === category
-                    ? 'text-amber-400 font-extrabold'
-                    : 'text-amber-200 font-normal'
-                } bg-transparent text-2xl tracking-wide`}
-                onClick={() => handleFilterChange('category', category)}
+                  selectedFilter.category === null
+                    ? 'font-extrabold text-amber-300'
+                    : 'font-normal text-amber-200'
+                } bg-transparent text-xl lg:text-2xl tracking-wide `}
               >
-                {category}
+                All
               </button>
-            ))}
+              {['hot', 'cold', 'cocktail'].map((category) => (
+                <button
+                  key={category}
+                  className={`${
+                    selectedFilter.category === category
+                      ? 'text-amber-400 font-extrabold'
+                      : 'text-amber-200 font-normal'
+                  } bg-transparent text-2xl tracking-wide`}
+                  onClick={() => handleFilterChange('category', category)}
+                >
+                  {category}
+                </button>
+              ))}
               <PiCoffeeLight size={30} className='text-[#8B735B]' />
-</div>
-          
+            </div>
 
             <div className='pl-0 lg:pl-2 pt-2 lg:pt-0'>
               <label
@@ -104,11 +104,21 @@ const Shop = () => {
                 onChange={(e) => handleSortOrderChange(e.target.value)}
                 className='text-amber-400 text-md md:text-xl tracking-wide outline-none bg-yellow-800 rounded-full py-1 px-2 cursor-pointer'
               >
-                <option className='text-xs md:text-md' value='asc'>Low to High</option>
-                <option className='text-xs md:text-md' value='desc'>High to Low</option>
+                <option className='text-xs md:text-lg' value='none'>
+                  select
+                </option>
+                <option className='text-xs md:text-lg' value='asc'>
+                  Low to High
+                </option>
+                <option className='text-xs md:text-lg' value='desc'>
+                  High to Low
+                </option>
               </select>
             </div>
-            <PiCoffeeLight className='text-[#8B735B] hidden lg:block' size={30} />
+            <PiCoffeeLight
+              className='text-[#8B735B] hidden lg:block'
+              size={30}
+            />
             <div className='flex flex-row justify-center mt-5 lg:mt-0 items-center py-1 px-3 text-md rounded-full  text-amber-500 border border-amber-500 '>
               <input
                 placeholder='Search coffee...'
