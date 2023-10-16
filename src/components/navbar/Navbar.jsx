@@ -28,7 +28,7 @@ const Navbar = () => {
 
   const isMobile = windowWidth <= 768 
   return (
-    <div className='flex items-center justify-between text-yellow-700 bg-transparent z-50 pr-5 pl-2 pt-6 lg:pt-4'>
+    <div className='flex items-center justify-between text-yellow-700 bg-transparent z-50 mr-5 pl-2 pt-7 lg:pt-4'>
       <div className='flex items-center'>
         <Link to={'/'}>
           <img
@@ -72,14 +72,14 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-      <div className='flex items-center relative pr-2 lg:pr-1'>
+      <div className='flex items-center relative pr-1'>
         <NavLink
           to={'/cart'}
           className={({ isActive }) => (isActive ? activeNav : notActiveNav)}
         >
           <FiShoppingCart size={isMobile ? 22 : 28} />
           {totalQuantity > 0 && (
-            <span className='absolute bottom-5 left-4 bg-yellow-700 text-white px-2 py-1 rounded-full text-sm lg:text-xs font-sans'>
+            <span className='absolute bottom-5 left-4 bg-yellow-700 text-white px-2 py-1 rounded-full text-xs font-sans'>
               {totalQuantity}
             </span>
           )}
