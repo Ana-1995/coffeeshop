@@ -91,7 +91,7 @@ const Shop = () => {
               <PiCoffeeLight size={30} className='text-[#8B735B]' />
             </div>
 
-            <div className='lg:pl-2 pt-4 pb-2 lg:pt-3'>
+            <div className='pl-0 lg:pl-2 pt-2 lg:pt-0'>
               <label
                 htmlFor='sortOrder'
                 className='text-amber-400 text-md md:text-xl tracking-wide font-bold pr-2'
