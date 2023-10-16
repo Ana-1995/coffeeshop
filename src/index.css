@@ -52,10 +52,9 @@ body {
   /* background: #0C0C0C; */
 background-image: url('../src/assets/bg.png');
   font-family: 'Cormorant Garamond', sans-serif;
-  height: 100vh;
+  height: 100%;
 }
 
-/* Add this to your CSS file */
 .underline-hover {
   position: relative;
   transition: all 0.3s ease; 
