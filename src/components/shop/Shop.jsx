@@ -59,7 +59,7 @@ const Shop = () => {
     <div className='w-full h-full mb-5'>
       <Navbar />
       <div>
-        <p className='text-center pt-9 pb-6 lg:pl-4 text-2xl mx-3 lg:mx-0 md:text-3xl tracking-wider text-yellow-800'>
+        <p className='text-center pt-9 pb-6 text-2xl mx-3 lg:mx-0 md:text-3xl tracking-wider text-yellow-800'>
           "Coffee smells like freshly ground heaven." - Jessi Lane Adams
         </p>
         <div className={`${resetAnimation ? 'scale-in-center' : 'hidden'}`}>
@@ -91,7 +91,7 @@ const Shop = () => {
               <PiCoffeeLight size={30} className='text-[#8B735B]' />
             </div>
 
-            <div className='pl-0 lg:pl-2 pt-2 lg:pt-0'>
+            <div className='lg:pl-2 pt-4 pb-2 lg:pt-3'>
               <label
                 htmlFor='sortOrder'
                 className='text-amber-400 text-md md:text-xl tracking-wide font-bold pr-2'
