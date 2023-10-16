@@ -8,52 +8,52 @@ import { Link } from 'react-router-dom'
 import './shop.css'
 
 const Shop = () => {
-  const [search, setSearch] = useState('')
-  const [selectedFilter, setselectedFilter] = useState({ category: null })
-  const [sortOrder, setSortOrder] = useState('none') 
-    const [resetAnimation, setResetAnimation] = useState(false)
-    useEffect(() => {
-      setResetAnimation(true)
-    }, [])
-  const handleFilterChange = (filterName, value) => {
-    setselectedFilter({ ...selectedFilter, [filterName]: value })
-  }
+   const [search, setSearch] = useState('')
+   const [selectedFilter, setselectedFilter] = useState({ category: null })
+   const [sortOrder, setSortOrder] = useState('none') // Updated sortOrder initial state
+   const [resetAnimation, setResetAnimation] = useState(false)
+   useEffect(() => {
+     setResetAnimation(true)
+   }, [])
 
-  const handleAllCoffeeFilter = () => {
-    setselectedFilter({ category: null })
-  }
+   const handleFilterChange = (filterName, value) => {
+     setselectedFilter({ ...selectedFilter, [filterName]: value })
+   }
 
-  const handleSortOrderChange = (order) => {
-    setSortOrder(order)
-  }
+   const handleAllCoffeeFilter = () => {
+     setselectedFilter({ category: null })
+   }
 
-  const filterAndSortCoffee = () => {
-    let filteredAndSortedCoffee = data
+   const handleSortOrderChange = (order) => {
+     setSortOrder(order)
+   }
 
-    // Filter based on selected category
-    if (selectedFilter.category) {
-      filteredAndSortedCoffee = filteredAndSortedCoffee.filter(
-        (coffee) => coffee.category === selectedFilter.category
-      )
-    }
+   const filterAndSortCoffee = () => {
+     let filteredAndSortedCoffee = data
 
-    // Filter based on search query
-    if (search) {
-      filteredAndSortedCoffee = filteredAndSortedCoffee.filter((coffee) =>
-        coffee.name.toLowerCase().includes(search.toLowerCase())
-      )
-    }
+     // Filter based on selected category
+     if (selectedFilter.category) {
+       filteredAndSortedCoffee = filteredAndSortedCoffee.filter(
+         (coffee) => coffee.category === selectedFilter.category
+       )
+     }
 
-    // Sort the filtered data
-  
-    if (sortOrder === 'asc') {
-      filteredAndSortedCoffee.sort((a, b) => a.price - b.price)
-    } else if (sortOrder === 'desc') {
-      filteredAndSortedCoffee.sort((a, b) => b.price - a.price)
-    }
+     // Filter based on search query
+     if (search) {
+       filteredAndSortedCoffee = filteredAndSortedCoffee.filter((coffee) =>
+         coffee.name.toLowerCase().includes(search.toLowerCase())
+       )
+     }
 
-    return filteredAndSortedCoffee
-  }
+     // Sort the filtered data
+     if (sortOrder === 'asc') {
+       filteredAndSortedCoffee.sort((a, b) => a.price - b.price)
+     } else if (sortOrder === 'desc') {
+       filteredAndSortedCoffee.sort((a, b) => b.price - a.price)
+     }
+
+     return filteredAndSortedCoffee
+   }
 
   return (
     <div className='w-full h-full mb-5'>

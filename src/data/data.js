@@ -4,15 +4,16 @@ import {americano, amore, capuccinovienesse, greekCappuccino, latte, latteMacchi
 export const data = [
   {
     id: 1,
-    img: americano,
-    name: 'Americano',
-    price: 5.00,
+    img: espressoLungo,
+    name: 'Espresso Lungo',
+    price: 12.0,
     water: 'hot water',
-    ingredients: '1 tbsp. plus 2 tsp. (25 ml) espresso ',
+    ingredients:
+      '1/4 oz (7 g) ground espresso coffee, pod or capsule. Hot water.  ',
     prepare:
-      'Prepare the espresso in a small cup. Fill a cappuccino cup with hot water (about 190 F, or 90 C) and add as much of the espresso as you prefer. Serve',
+      'You can follow the classic method, using your espresso machine as usual with a capsule, pod or ground coffee. You will have to make sure however, to extend the extraction to 35 seconds: this way, you will have about 30 ml (2 tbsp) of coffee in the cup.',
     description:
-      'Even the Italian espresso can be tempted by the American dream. When a bigger cup of coffee is in order, espresso teams up with boiling water, transforming into a drink to be enjoyed over time, and sipped at any time of day.',
+      'When it is slightly lengthened, espresso is a pleasure to be enjoyed slowly. Strong and passionate like a story, this coffee has a special way of unfolding in the cup, with an abundance of unique qualities.',
     category: 'hot',
   },
 
@@ -20,7 +21,7 @@ export const data = [
     id: 2,
     img: macchiato,
     name: 'Macchiato',
-    price: 10.00,
+    price: 10.0,
     water: 'hot water',
     ingredients: '1 tbsp plus 1 or 2 tsp (20-25 ml) espresso ',
     prepare:
@@ -34,7 +35,7 @@ export const data = [
     id: 3,
     img: dripCoffee,
     name: 'Drip Coffee',
-    price: 8.00,
+    price: 8.0,
     water: 'hot water',
     ingredients: '7-8 grams (about a tablespoon) of ground coffee ',
     prepare:
@@ -47,7 +48,7 @@ export const data = [
     id: 4,
     img: amore,
     name: 'Amore',
-    price: 18.00,
+    price: 18.0,
     water: 'cold water',
     ingredients:
       'Approx. 3 tbsp (45-50 ml) espresso. Approx. 3 tbsp (40 ml) amaretto liqueur. Fresh heavy cream. 2 coffee beans ',
@@ -61,7 +62,7 @@ export const data = [
     id: 5,
     img: irishCoffee,
     name: 'Irish Coffee',
-    price: 15.00,
+    price: 15.0,
     water: 'cold water',
     ingredients:
       '2 shots illy espresso. Approx. 3 tbsp (40 ml) Irish whiskey. 1 tsp (5 g) cane sugar. Approx. 3 tbsp (40 ml) fresh heavy cream. 2 coffee beans. ',
@@ -75,7 +76,7 @@ export const data = [
     id: 6,
     img: mugaccino,
     name: 'Mugaccino',
-    price: 10.00,
+    price: 10.0,
     water: 'hot water',
     ingredients: '2 shots illy espresso. 2/3 cup (150 ml) fresh whole milk ',
     prepare:
@@ -88,7 +89,7 @@ export const data = [
     id: 7,
     img: latte,
     name: 'Latte',
-    price: 10.00,
+    price: 10.0,
     water: 'hot water',
     ingredients: '2 shots illy espresso. 1 cup whole milk (240 ml) ',
     prepare:
@@ -101,7 +102,7 @@ export const data = [
     id: 8,
     img: espressoFrappe,
     name: 'Espresso Frappe',
-    price: 14.00,
+    price: 14.0,
     water: 'cold water',
     ingredients:
       '3 tbsp. (40-50 ml) espresso. 1 tbsp plus 1 tsp (20 ml) liquid sugar. 5-6 ice cubes ',
@@ -115,7 +116,7 @@ export const data = [
     id: 9,
     img: fredoEspresso,
     name: 'Fredo Espresso Shaken',
-    price: 18.00,
+    price: 18.0,
     water: 'cold water',
     ingredients:
       '3 tbsp. (40-50 ml) espresso. 2 tsp (10 ml) liquid sugar. Ice cubes. ',
@@ -129,7 +130,7 @@ export const data = [
     id: 10,
     img: vodkaEspresso,
     name: 'Vodka Espresso',
-    price: 18.00,
+    price: 18.0,
     water: 'cold water',
     ingredients:
       '25 ml of espresso. 10 ml of liquid sugar. 10 ml of coffee liqueur. 20 ml of white vodka. Ice cubes ',
@@ -143,7 +144,7 @@ export const data = [
     id: 11,
     img: doubleEspresso,
     name: 'Double Espresso',
-    price: 10.00,
+    price: 10.0,
     water: 'hot water',
     ingredients: '40-50 ml espresso. ',
     prepare: 'Prepare two espresso in a cappuccino cup and serve.',
@@ -154,7 +155,7 @@ export const data = [
     id: 12,
     img: espressoDelight,
     name: 'Espresso Delight',
-    price: 18.00,
+    price: 18.0,
     water: 'hot water',
     ingredients:
       '1 TBSP plus 2 TSP (25 ml) of espresso. 2 TBSP (30 ml) of hot chocolate. Liquid sugar. 1 TBSP plus 1 TSP (20 ml) of coffee liqueur. Approx. 3 TBSP (40 ml) of heavy cream ',
@@ -168,7 +169,7 @@ export const data = [
     id: 13,
     img: greekCappuccino,
     name: 'Greek Cappuccino',
-    price: 12.00,
+    price: 12.0,
     water: 'cold water',
     ingredients:
       '1 shot illy espresso. 2 tsp liquid sugar (10 ml). 4 Tbsp skim milk (60 ml). 4-5 ice cubes. ',
@@ -182,7 +183,7 @@ export const data = [
     id: 14,
     img: tiramisuEspresso,
     name: 'Tiramisu Espresso',
-    price: 20.00,
+    price: 20.0,
     water: 'cold water',
     ingredients:
       '2 shots illy espresso. 1 scoop vanilla ice cream or gelato. 2 ladyfingers, crumbled. Unsweetened cocoa powder ',
@@ -196,7 +197,7 @@ export const data = [
     id: 15,
     img: latteMacchiato,
     name: 'Latte Macchiato',
-    price: 12.00,
+    price: 12.0,
     water: 'hot water',
     ingredients:
       '1 shot illy espresso. 1/3 cup plus 2 tsp whole milk (90 ml). ',
@@ -210,7 +211,7 @@ export const data = [
     id: 16,
     img: capuccinovienesse,
     name: 'Cappuccino Vienesse',
-    price: 14.00,
+    price: 14.0,
     water: 'hot water',
     ingredients:
       '1 shot illy Espresso. Fresh cold whole milk. 3 oz heavy cream (90 ml). Cocoa powder. cream topping ',
@@ -224,7 +225,7 @@ export const data = [
     id: 17,
     img: marocchino,
     name: 'Marocchino',
-    price: 16.00,
+    price: 16.0,
     water: 'hot water',
     ingredients:
       '1 shot illy espresso. 2-3 tsp (10-15 ml) hot chocolate. 1 scant oz (25 ml) fresh whole milk. Cocoa powder. ',
@@ -238,7 +239,7 @@ export const data = [
     id: 18,
     img: meltingSnow,
     name: 'Melting Snow',
-    price: 20.00,
+    price: 20.0,
     water: 'hot water',
     ingredients:
       '1 tbsp. plus 1 or 2 tsp (20-25 ml) espresso. 2 tsp (10 ml) liquid cane sugar. 4 tbsp. (60 ml) fresh whole milk. 2 tbsp (30 ml) skim milk.',
@@ -252,7 +253,7 @@ export const data = [
     id: 19,
     img: chocolatewave,
     name: 'Chocolate Wave',
-    price: 18.00,
+    price: 18.0,
     water: 'hot water',
     ingredients:
       '1 shot illy Espresso. 1-1.5 tbsp hot chocolate (15-20 ml). 1 tbsp plus 1 tsp skim milk (20 ml).',
@@ -264,16 +265,15 @@ export const data = [
   },
   {
     id: 20,
-    img: espressoLungo,
-    name: 'Espresso Lungo',
-    price: 12.00,
+    img: americano,
+    name: 'Americano',
+    price: 5.0,
     water: 'hot water',
-    ingredients:
-      '1/4 oz (7 g) ground espresso coffee, pod or capsule. Hot water.  ',
+    ingredients: '1 tbsp. plus 2 tsp. (25 ml) espresso ',
     prepare:
-      'You can follow the classic method, using your espresso machine as usual with a capsule, pod or ground coffee. You will have to make sure however, to extend the extraction to 35 seconds: this way, you will have about 30 ml (2 tbsp) of coffee in the cup.',
+      'Prepare the espresso in a small cup. Fill a cappuccino cup with hot water (about 190 F, or 90 C) and add as much of the espresso as you prefer. Serve',
     description:
-      'When it is slightly lengthened, espresso is a pleasure to be enjoyed slowly. Strong and passionate like a story, this coffee has a special way of unfolding in the cup, with an abundance of unique qualities.',
+      'Even the Italian espresso can be tempted by the American dream. When a bigger cup of coffee is in order, espresso teams up with boiling water, transforming into a drink to be enjoyed over time, and sipped at any time of day.',
     category: 'hot',
   },
 ]
