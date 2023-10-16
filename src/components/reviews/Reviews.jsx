@@ -36,9 +36,9 @@ useEffect(()=>{
      <div
        className={`${
          animation ? 'swing-in-left-bck' : 'hidden'
-       } bg-[#2A1300] rounded-2xl m-auto w-[90%] lg:w-[32rem] h-[30rem] lg:h-[26rem] relative mt-12 pt-6 px-4 mb-4`}
+       } bg-[#2A1300] rounded-2xl m-auto w-[90%] lg:w-[32rem] h-[30rem] lg:h-[26rem] relative mt-6 lg:mt-12 pt-6 px-4`}
      >
-       <div className='rounded-full w-32 h-32 mx-auto my-2 lg:my-4'>
+       <div className='rounded-full w-32 h-32 mx-auto my-2'>
          <img
            src={review.img}
            alt={review.name}
