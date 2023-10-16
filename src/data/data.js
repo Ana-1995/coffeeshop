@@ -325,14 +325,14 @@ export const reviewsData = [
     img: person7,
     name: 'Jacob Gregory',
     review:
-      ' If you’re looking for a place where to relax and read some novels or whatever, this coffee shop would be the best. They have the best coffee available and even some fresh baked goods as well. The ambiance of this shop was so relaxing, and the staffs are highly capable.',
+      ' If you’re looking for a place where to relax or whatever, this coffee shop would be the best. They have the best coffee available and even some fresh baked goods as well. The ambiance of this shop was so relaxing, and the staffs are highly capable.',
   },
   {
     id: 37,
     img: person8,
     name: 'Arianna Noble',
     review:
-      'I could not ask for more because everything that I needed was provided. Well done, guys! Keep making great coffee and pastries!',
+      'I could not ask for more because everything that I needed was provided. Well done, guys! Keep making great coffee!',
   },
   {
     id: 38,
@@ -346,6 +346,6 @@ export const reviewsData = [
     img: person10,
     name: 'Steven Becker',
     review:
-      'A unique coffee shop to study and read books. No loud noises which will help you a lot to concentrate on what you do. They do have a variety of food and drinks you can select from. I honestly love the great interior all over the place. Trust me! You will never be disappointed for sure! A memorable place to relax.',
+      'A unique coffee shop. No loud noises which will help you a lot to concentrate on what you do. They do have a variety of drinks you can select from. Trust me! You will never be disappointed for sure! A memorable place to relax.',
   },
 ]
