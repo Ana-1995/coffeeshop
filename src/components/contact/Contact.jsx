@@ -28,19 +28,19 @@ const Contact = () => {
    }
  }
   return (
-    <div>
+    <div className='w-full h-full'>
       <Navbar />
-      <p className='text-center pt-9 pb-3 lg:pb-6 lg:pl-4 text-2xl mx-3 lg:mx-0 md:text-3xl tracking-wider text-yellow-800'>
+      <p className='text-center pt-9 pb-5 lg:pb-10 lg:pl-4 text-2xl mx-3 lg:mx-0 md:text-3xl tracking-wider text-yellow-800'>
         "To make me happy: Make me coffee, bring me coffee." - Stacey London
       </p>
       <div
         className={`${
           animation ? 'fade-in-fwd' : 'hidden'
-        } w-full lg:w-[45rem] shadow-xl  shadow-[#4B3821] h-[30rem] m-auto bg-cover bg-left relative rounded-xl mb-5`}
+        } w-full lg:w-[45rem] shadow-xl  shadow-[#4B3821] h-[30rem] m-auto bg-cover bg-left relative rounded-xl mb-10`}
         style={{ backgroundImage: `url(${contact})` }}
       >
         <div className='absolute top-28 right-20 flex flex-col'>
-          <h4 className='text-4xl tracking-wider text-amber-300'>HELLO!</h4>
+          <h4 className='text-4xl tracking-wider text-center font-bold text-amber-300'>HELLO!</h4>
           <form className='flex flex-col mt-6' onSubmit={handleSubmit}>
             <input
               className={`outline-yellow-800 border bg-white lg:bg-transparent text-xl text-black lg:text-white py-2 px-3 rounded-full ${

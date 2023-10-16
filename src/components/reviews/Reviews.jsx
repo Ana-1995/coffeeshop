@@ -28,7 +28,7 @@ useEffect(()=>{
  const review = reviewsData[currentReview]
 
  return (
-   <div>
+   <div className='w-full h-full'>
      <Navbar />
      <p className='text-center pt-9 pb-0 lg:pb-6 lg:pl-4 text-2xl mx-3 lg:mx-0 md:text-3xl tracking-wider text-yellow-800'>
        "Coffee, the favorite drink of the civilized world." - Thomas Jefferson
@@ -49,7 +49,7 @@ useEffect(()=>{
          <p className='text-3xl pb-4 text-amber-200 tracking-wider font-semibold'>
            {review.name}
          </p>
-         <div className=''>
+         <div>
            {' '}
            <p className='text-xl text-center w-fit text-amber-400'>
              "{review.review}"
@@ -60,16 +60,16 @@ useEffect(()=>{
      <div
        className={`${
          animation2 ? 'swing-in-bottom-fwd' : 'hidden'
-       } flex justify-center items-center mt-3 pb-5 lg:mt-6 space-x-3 text-3xl`}
+       } flex justify-center items-center mb-16 mt-3 lg:mt-6 space-x-3 text-3xl`}
      >
        <button
-         className='text-white hover:text-amber-600 mb-5'
+         className='text-white hover:text-amber-600 '
          onClick={handlePrevReview}
        >
          <BsArrowLeft />
        </button>
        <button
-         className='text-white hover:text-amber-600 mb-5'
+         className='text-white hover:text-amber-600'
          onClick={handleNextReview}
        >
          <BsArrowRight />

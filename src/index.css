@@ -24,10 +24,16 @@
   --hover-transition: all 0.4s ease;
   --letter-spacing: 1.5px;
 }
-
+body {
+  /* background: #2A1300; */
+  /* background: #0C0C0C; */
+background-image: url('../src/assets/bg.png');
+  font-family: 'Cormorant Garamond', sans-serif;
+  height: 100%;
+}
 .scrollbar-container::-webkit-scrollbar {
   width: 8px;
-    border-radius: 50%;
+  border-radius: 50%;
 
 }
 
@@ -47,13 +53,7 @@
 .scrollbar-container::-webkit-scrollbar-thumb:hover {
    background: rgb(51, 47, 1);
 }
-body {
-  /* background: #2A1300; */
-  /* background: #0C0C0C; */
-background-image: url('../src/assets/bg.png');
-  font-family: 'Cormorant Garamond', sans-serif;
-  height: 100%;
-}
+
 
 .underline-hover {
   position: relative;

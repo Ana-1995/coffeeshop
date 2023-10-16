@@ -19,7 +19,7 @@ const productDetails = ({ products }) => {
   }
 
   return (
-    <section className='w-full h-auto'>
+    <section className='w-full h-full'>
       <Navbar />
       <div
         className={`${
@@ -89,7 +89,7 @@ const productDetails = ({ products }) => {
           </p>
 
           <Link
-            className='text-xl font-mono font-bold text-yellow-600 border-b border-yellow-600 w-fit mb-5 lg:mb-1 '
+            className='text-xl font-mono font-bold text-yellow-600 border-b border-yellow-600 w-fit mb-10 lg:mb-1 '
             to={'/shop'}
           >
             BACK TO SHOP

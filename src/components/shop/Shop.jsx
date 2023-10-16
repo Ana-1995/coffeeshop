@@ -131,7 +131,7 @@ const Shop = () => {
             </div>
           </div>
 
-          <div className='flex flex-col md:flex-row flex-wrap justify-center items-center gap-y-2 lg:gap-y-5 gap-x-5 mt-5'>
+          <div className='flex flex-col w-full h-full md:flex-row flex-wrap justify-center items-center gap-y-2 lg:gap-y-5 gap-x-5 mt-5'>
             {filterAndSortCoffee().map((coffee) => (
               <Product
                 key={coffee.id}
