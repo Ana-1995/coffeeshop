@@ -28,17 +28,17 @@ const Navbar = () => {
 
   const isMobile = windowWidth <= 768 
   return (
-    <div className='flex items-center justify-between text-yellow-700 bg-transparent z-50 mr-5 pl-2 pt-7 lg:pt-4'>
+    <div className='flex items-center justify-between text-yellow-700 bg-transparent z-50 mx-3 pt-7 lg:pt-4'>
       <div className='flex items-center'>
         <Link to={'/'}>
           <img
             src={logo}
-            className='w-12 md:w-20 h-10 md:h-16 object-cover'
+            className='w-10 md:w-20 h-10 md:h-16 object-cover'
             alt=''
           />
         </Link>
       </div>
-      <ul className='flex flex-row justify-center items-center text-lg md:text-3xl gap-3 md:gap-4 tracking-wider font-extrabold'>
+      <ul className='flex flex-row justify-center items-center text-md md:text-3xl gap-3 md:gap-4 tracking-wider font-extrabold'>
         <li className='underline-hover'>
           <NavLink
             to={'/'}
@@ -72,14 +72,14 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
-      <div className='flex items-center relative pr-1'>
+      <div className='flex items-center relative'>
         <NavLink
           to={'/cart'}
           className={({ isActive }) => (isActive ? activeNav : notActiveNav)}
         >
           <FiShoppingCart size={isMobile ? 22 : 28} />
           {totalQuantity > 0 && (
-            <span className='absolute bottom-5 left-4 bg-yellow-700 text-white px-2 py-1 rounded-full text-xs font-sans'>
+            <span className='absolute bottom-5 left-2 lg:left-4 bg-yellow-700 text-white px-2 py-1 rounded-full text-xs font-sans'>
               {totalQuantity}
             </span>
           )}
