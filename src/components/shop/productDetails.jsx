@@ -5,7 +5,9 @@ import { IoWaterOutline } from 'react-icons/io5'
 import { useCart } from '../cart/CartContext'
 
 const productDetails = ({ products }) => {
-      const [resetAnimation, setResetAnimation] = useState(false)
+    const [resetAnimation, setResetAnimation] = useState(false)
+   const [isClicked, setIsClicked] = useState(false)
+   const [quantity, setQuantity] = useState(0)
   useEffect(() => {
     window.scrollTo(0, 0)
     setResetAnimation(true)
@@ -17,7 +19,11 @@ const productDetails = ({ products }) => {
   if (!product) {
     return <div>Product not found.</div>
   }
-
+const handleToCart=()=>{
+  addToCart(product)
+ setIsClicked(true)
+ setQuantity(quantity+1)
+}
   return (
     <section className='w-full h-full'>
       <Navbar />
@@ -39,10 +45,14 @@ const productDetails = ({ products }) => {
               {product.name}
             </span>
             <span
-              onClick={() => addToCart(product)}
-              className='text-yellow-700 hover:text-yellow-600 hover:border-yellow-600 text-xl md:text-2xl border-b border-yellow-700 w-fit font-bold cursor-pointer ml-3 lg:ml-0'
+              onClick={handleToCart}
+              className={`text-yellow-700 hover:text-yellow-600 hover:border-yellow-600 text-xl md:text-2xl border-b border-yellow-700 w-fit font-bold cursor-pointer ml-3 lg:ml-0 ${
+                isClicked
+                  ? 'text-yellow-500'
+                  : 'text-yellow-700'
+              }`}
             >
-              Order Now
+              {isClicked ? `Ordered(${quantity})` : 'Order Now'} 
             </span>
           </p>
           <p className='text-2xl text-center lg:text-start lg:text-4xl text-amber-400 font-mono font-bold'>
@@ -85,7 +95,9 @@ const productDetails = ({ products }) => {
             <span className='text-xl md:text-2xl text-amber-200'>
               Preparation:
             </span>{' '}
-            <span className='text-md md:text-lg font-sans pl-2'>{product.prepare}</span>
+            <span className='text-md md:text-lg font-sans pl-2'>
+              {product.prepare}
+            </span>
           </p>
 
           <Link
