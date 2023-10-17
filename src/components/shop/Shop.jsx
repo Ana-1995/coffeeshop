@@ -10,7 +10,7 @@ import './shop.css'
 const Shop = () => {
    const [search, setSearch] = useState('')
    const [selectedFilter, setselectedFilter] = useState({ category: null })
-   const [sortOrder, setSortOrder] = useState('none') // Updated sortOrder initial state
+   const [sortOrder, setSortOrder] = useState('') // Updated sortOrder initial state
    const [resetAnimation, setResetAnimation] = useState(false)
    useEffect(() => {
      setResetAnimation(true)
@@ -113,7 +113,7 @@ const Shop = () => {
                 onChange={(e) => handleSortOrderChange(e.target.value)}
                 className='text-amber-400 text-md md:text-xl tracking-wide outline-none bg-yellow-800 rounded-full py-1 px-2 cursor-pointer'
               >
-                <option className='text-xs md:text-lg' value='none'>
+                <option className='text-xs md:text-lg'>
                   select
                 </option>
                 <option className='text-xs md:text-lg' value='asc'>
