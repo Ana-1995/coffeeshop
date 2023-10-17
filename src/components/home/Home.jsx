@@ -40,7 +40,7 @@ const Home = () => {
           <button
             className={`${
               resetAnimation3 ? 'scale-in-center' : 'hidden'
-            } bg-amber-400 hover:bg-amber-500 font-bold duration-300 text-black py-2 px-4 rounded-full text-2xl md:text-4xl lg:text-3xl tracking-wider`}
+            } bg-amber-400 hover:bg-amber-500 font-bold duration-300 text-black py-1 lg:py-2 px-4 rounded-full text-2xl md:text-4xl lg:text-3xl tracking-wider`}
           >
             <Link to={'/shop'}>Explore</Link>
           </button>

@@ -82,7 +82,7 @@ const Shop = () => {
                     selectedFilter.category === category
                       ? 'text-amber-400 font-extrabold'
                       : 'text-amber-200 font-normal'
-                  } bg-transparent text-2xl tracking-wide`}
+                  } bg-transparent text-2xl tracking-wide capitalize`}
                   onClick={() => handleFilterChange('category', category)}
                 >
                   {category}
