@@ -29,7 +29,7 @@ const Home = () => {
         style={{ backgroundImage: `url(${homebg2})` }}
       >
         <Navbar />
-        <div className='flex flex-col my-60 lg:my-72 items-center gap-y-6 text-center'>
+        <div className='flex flex-col my-64 md:my-72 items-center gap-y-6 text-center'>
           <h1
             className={`${
               resetAnimation2 ? 'scale-in-center' : 'hidden'

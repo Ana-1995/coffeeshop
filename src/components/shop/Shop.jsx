@@ -90,8 +90,17 @@ const Shop = () => {
               ))}
               <PiCoffeeLight size={30} className='text-[#8B735B]' />
             </div>
-
-            <div className='pl-0 lg:pl-2 pt-2 lg:pt-0'>
+            <div className='flex flex-row justify-center mt-5 lg:mt-0 items-center py-1 px-3 text-md rounded-full  text-amber-500 border border-amber-500 lg:hidden '>
+              <input
+                placeholder='Search coffee...'
+                type='text'
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className='bg-transparent outline-none border-none placeholder-amber-500 text-lg '
+              />
+              <BsFillSearchHeartFill className='text-amber-500' />
+            </div>
+            <div className='pl-0 lg:pl-2 pt-5 lg:pt-0'>
               <label
                 htmlFor='sortOrder'
                 className='text-amber-400 text-md md:text-xl tracking-wide font-bold pr-2'
@@ -119,7 +128,7 @@ const Shop = () => {
               className='text-[#8B735B] hidden lg:block'
               size={30}
             />
-            <div className='flex flex-row justify-center mt-5 lg:mt-0 items-center py-1 px-3 text-md rounded-full  text-amber-500 border border-amber-500 '>
+            <div className='hidden lg:flex flex-row justify-center items-center py-1 px-3 text-md rounded-full text-amber-500 border border-amber-500 '>
               <input
                 placeholder='Search coffee...'
                 type='text'
