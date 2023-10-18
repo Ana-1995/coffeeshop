@@ -38,7 +38,7 @@ const Navbar = () => {
           />
         </Link>
       </div>
-      <ul className='flex flex-row justify-center items-center text-md md:text-3xl gap-3 md:gap-4 tracking-wider font-extrabold'>
+      <ul className='flex flex-row justify-center items-center text-md md:text-3xl lg:text-2xl gap-3 md:gap-4 tracking-wider font-extrabold'>
         <li className='underline-hover'>
           <NavLink
             to={'/'}

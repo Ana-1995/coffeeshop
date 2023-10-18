@@ -47,12 +47,10 @@ const handleToCart=()=>{
             <span
               onClick={handleToCart}
               className={`text-yellow-700 hover:text-yellow-600 hover:border-yellow-600 text-xl md:text-2xl border-b border-yellow-700 w-fit font-bold cursor-pointer ml-3 lg:ml-0 ${
-                isClicked
-                  ? 'text-yellow-500'
-                  : 'text-yellow-700'
+                isClicked ? 'text-yellow-500' : 'text-yellow-700'
               }`}
             >
-              {isClicked ? `Ordered(${quantity})` : 'Order Now'} 
+              {isClicked ? `Ordered(${quantity})` : 'Order Now'}
             </span>
           </p>
           <p className='text-2xl text-center lg:text-start lg:text-4xl text-amber-400 font-mono font-bold'>
@@ -63,8 +61,8 @@ const handleToCart=()=>{
               <span
                 className={
                   product.water === 'hot water'
-                    ? 'text-red-600'
-                    : 'text-blue-300'
+                    ? 'text-red-600 text-xl'
+                    : 'text-blue-300 text-xl'
                 }
               >
                 {product.water}
@@ -74,19 +72,19 @@ const handleToCart=()=>{
                 <IoWaterOutline
                   className={
                     product.water === 'hot water'
-                      ? 'text-red-600'
-                      : 'text-blue-300'
+                      ? 'text-red-600 text-xl'
+                      : 'text-blue-300 text-xl'
                   }
                 />{' '}
               </span>
             </p>
           </div>
-          <p className='text-lg'>{product.description}</p>
+          <p className='text-md md:text-lg font-sans'>{product.description}</p>
           <p>
             <span className='text-xl md:text-2xl text-amber-200'>
               Ingredients:
             </span>{' '}
-            <span className='text-lg font-sans pl-2'>
+            <span className='text-md md:text-lg font-sans pl-2'>
               {product.ingredients}
             </span>
           </p>
@@ -95,7 +93,7 @@ const handleToCart=()=>{
             <span className='text-xl md:text-2xl text-amber-200'>
               Preparation:
             </span>{' '}
-            <span className='text-md md:text-lg font-sans pl-2'>
+            <span className='text-md md:text-lg pl-2 font-sans'>
               {product.prepare}
             </span>
           </p>
