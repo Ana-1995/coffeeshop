@@ -88,12 +88,7 @@ const Shop = () => {
                   {category}
                 </button>
               ))}
-              {window.innerWidth < 768 ? (
-                    <PiCoffeeLight size={24} className='text-[#8B735B]' />
-              ) : (
-                <PiCoffeeLight size={30} className='text-[#8B735B]' />
-              )}
-              
+              <PiCoffeeLight size={window.innerWidth < 768 ? 24 : 30} className='text-[#8B735B]' />             
             </div>
             <div className='flex flex-row justify-center mt-5 lg:mt-0 items-center py-1 px-3 text-md rounded-full  text-amber-500 border border-amber-500 lg:hidden '>
               <input
