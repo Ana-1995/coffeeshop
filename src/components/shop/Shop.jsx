@@ -71,7 +71,7 @@ const Shop = () => {
                   selectedFilter.category === null
                     ? 'font-extrabold text-amber-300'
                     : 'font-normal text-amber-200'
-                } bg-transparent text-xl lg:text-2xl tracking-wide `}
+                } bg-transparent text-md md:text-xl lg:text-2xl tracking-wide `}
               >
                 All
               </button>
@@ -82,13 +82,18 @@ const Shop = () => {
                     selectedFilter.category === category
                       ? 'text-amber-400 font-extrabold'
                       : 'text-amber-200 font-normal'
-                  } bg-transparent text-2xl tracking-wide capitalize`}
+                  } bg-transparent text-md md:text-xl lg:text-2xl tracking-wide capitalize`}
                   onClick={() => handleFilterChange('category', category)}
                 >
                   {category}
                 </button>
               ))}
-              <PiCoffeeLight size={30} className='text-[#8B735B]' />
+              {window.innerWidth < 768 ? (
+                    <PiCoffeeLight size={22} className='text-[#8B735B]' />
+              ) : (
+                <PiCoffeeLight size={30} className='text-[#8B735B]' />
+              )}
+              
             </div>
             <div className='flex flex-row justify-center mt-5 lg:mt-0 items-center py-1 px-3 text-md rounded-full  text-amber-500 border border-amber-500 lg:hidden '>
               <input
@@ -96,7 +101,7 @@ const Shop = () => {
                 type='text'
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className='bg-transparent outline-none border-none placeholder-amber-500 text-lg '
+                className='bg-transparent outline-none border-none placeholder-amber-500 text-md '
               />
               <BsFillSearchHeartFill className='text-amber-500' />
             </div>
@@ -113,9 +118,7 @@ const Shop = () => {
                 onChange={(e) => handleSortOrderChange(e.target.value)}
                 className='text-amber-400 text-md md:text-xl tracking-wide outline-none bg-yellow-800 rounded-full py-1 px-2 cursor-pointer'
               >
-                <option className='text-xs md:text-lg'>
-                  select
-                </option>
+                <option className='text-xs md:text-lg'>select</option>
                 <option className='text-xs md:text-lg' value='asc'>
                   Low to High
                 </option>
