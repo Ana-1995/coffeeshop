@@ -71,7 +71,7 @@ const Shop = () => {
                   selectedFilter.category === null
                     ? 'font-extrabold text-amber-300'
                     : 'font-normal text-amber-200'
-                } bg-transparent text-md md:text-xl lg:text-2xl tracking-wide `}
+                } bg-transparent text-lg md:text-xl lg:text-2xl tracking-wide `}
               >
                 All
               </button>
@@ -82,14 +82,14 @@ const Shop = () => {
                     selectedFilter.category === category
                       ? 'text-amber-400 font-extrabold'
                       : 'text-amber-200 font-normal'
-                  } bg-transparent text-md md:text-xl lg:text-2xl tracking-wide capitalize`}
+                  } bg-transparent text-lg md:text-xl lg:text-2xl tracking-wide capitalize`}
                   onClick={() => handleFilterChange('category', category)}
                 >
                   {category}
                 </button>
               ))}
               {window.innerWidth < 768 ? (
-                    <PiCoffeeLight size={22} className='text-[#8B735B]' />
+                    <PiCoffeeLight size={24} className='text-[#8B735B]' />
               ) : (
                 <PiCoffeeLight size={30} className='text-[#8B735B]' />
               )}
