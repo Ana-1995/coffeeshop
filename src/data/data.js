@@ -49,7 +49,7 @@ export const data = [
     img: amore,
     name: 'Amore',
     price: 18.0,
-    water: 'cold water',
+    water: 'hot water',
     ingredients:
       'Approx. 3 tbsp (45-50 ml) espresso. Approx. 3 tbsp (40 ml) amaretto liqueur. Fresh heavy cream. 2 coffee beans ',
     prepare:
