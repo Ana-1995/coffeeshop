@@ -75,7 +75,7 @@ const Shop = () => {
               >
                 All
               </button>
-              {['hot', 'cold', 'cocktail'].map((category) => (
+              {['hot', 'cold', 'cocktails'].map((category) => (
                 <button
                   key={category}
                   className={`${

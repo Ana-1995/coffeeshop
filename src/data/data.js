@@ -56,21 +56,21 @@ export const data = [
       'Prepare two espresso in a cappuccino cup. Pour the liqueur into the glass and heat it with your espresso machine’s steam wand. Take care to not overheat it, as this would change its aromas. Add the espresso to the liqueur',
     description:
       'An encounter between a double espresso and the sweet personality of amaretto liqueur, including a dense layer of shaken cream. It is no coincidence that this hot, intense, aromatic drink, with a romantic soul, is called Amore.',
-    category: 'cocktail',
+    category: 'cocktails',
   },
   {
     id: 5,
     img: irishCoffee,
     name: 'Irish Coffee',
     price: 15.0,
-    water: 'cold water',
+    water: 'hot water',
     ingredients:
       '2 shots illy espresso. Approx. 3 tbsp (40 ml) Irish whiskey. 1 tsp (5 g) cane sugar. Approx. 3 tbsp (40 ml) fresh heavy cream. 2 coffee beans. ',
     prepare:
       'Prepare two espresso into a cappuccino cup. Pour the whiskey and the cane sugar into a serving glass, heating it with the steam wand of your espresso machine. Add the coffee to the glass of warmed whiskey. Shake the cream, which should be very cold, in the mini shaker until it becomes quite thick.',
     description:
       'A classic born in Ireland and celebrated all over the world for its combination of coffee and Irish whiskey. A delicate layer of thick but not overly-whipped cream tempers the strength of this cocktail, and completes its perfection.',
-    category: 'cocktail',
+    category: 'cocktails',
   },
   {
     id: 6,
@@ -131,14 +131,14 @@ export const data = [
     img: vodkaEspresso,
     name: 'Vodka Espresso',
     price: 18.0,
-    water: 'cold water',
+    water: 'hot water',
     ingredients:
       '25 ml of espresso. 10 ml of liquid sugar. 10 ml of coffee liqueur. 20 ml of white vodka. Ice cubes ',
     prepare:
       'Prepare the espresso in the cup. Add the liquid sugar, coffee liqueur, white vodka and, finally, the espresso. Cool by mixing the ingredients with the mixing spoon. Pour the mixture into the glass together with some ice cubes and serve.',
     description:
       ' Vodka in this cold cocktail meets espresso: the two discover they like each other a lot and together they willingly abandon themselves to the creaminess of the coffee liqueur, creating a perfect harmony of flavors.',
-    category: 'cocktail',
+    category: 'cocktails',
   },
   {
     id: 11,
@@ -163,7 +163,7 @@ export const data = [
       'Prepare the espresso in a small cup. Prepare the hot chocolate in the pitcher. Sweeten it with some liquid sugar to taste. Pour the hot chocolate, espresso, and liqueur into a glass. Shake the cream in a shaker. Gently rest the cream on the surface of the cocktail, making it run down the back of the mixing spoon, and serve.',
     description:
       'With its pure white decadence, the shaken cream hides under a delectable layer of chocolate and coffee, to which a touch of alcohol adds a cheeky touch. The taste of espresso is enhanced by the aromatic notes of liqueur that accompanies it. ',
-    category: 'cocktail',
+    category: 'cocktails',
   },
   {
     id: 13,
@@ -277,6 +277,7 @@ export const data = [
     category: 'hot',
   },
 ]
+
 export const reviewsData = [
   {
     id: 30,
