@@ -131,7 +131,7 @@ export const data = [
     img: vodkaEspresso,
     name: 'Vodka Espresso',
     price: 18.0,
-    water: 'hot water',
+    water: 'cold water',
     ingredients:
       '25 ml of espresso. 10 ml of liquid sugar. 10 ml of coffee liqueur. 20 ml of white vodka. Ice cubes ',
     prepare:
