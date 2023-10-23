@@ -115,7 +115,7 @@ export const data = [
   {
     id: 9,
     img: fredoEspresso,
-    name: 'Fredo Espresso Shaken',
+    name: 'Fredo Espresso',
     price: 18.0,
     water: 'cold water',
     ingredients:
